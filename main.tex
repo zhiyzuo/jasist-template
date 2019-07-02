@@ -1,31 +1,61 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[a4paper,man,natbib,12pt]{apa6}
+% use apa6 class as a starting point for jasist template
+% the basic requirement is to follow apa styles
+% except for line spacing
+% all credits belong to
+% https://www.overleaf.com/project/new/template/288?id=630802&mainFile=main.tex&templateName=Your%20APA6-Style%20Manuscript
+%%%%%%%%%%%%%%%%%%%%%
+% https://onlinelibrary.wiley.com/page/journal/23301643/homepage/forauthors.html
+% Manuscripts submitted to JASIST should follow APA style format (refer to Publication Manual of the American Psychological Association - http://www.apastyle.org/manual for details) in terms of page layout, margins, headings and citations/references with one modification: single or 1.5-line text spacing is preferred. Manuscripts with non-APA citation/reference style, double-column text layout, numbered references, numbered sections/headings and other non-APA formatting features will be returned to the authors for correction.
+%%%%%%%%%%%%%%%%%%%%%
 
-\title{jasist}
-\author{Zhiya Zuo}
-\date{July 2019}
-
-\usepackage{natbib}
+\usepackage{setspace}
+\onehalfspace
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
 \usepackage{graphicx}
+%\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Your JASIST Manuscript}
+\shorttitle{Your JASIST Manuscript}
+\twoauthors{Lala La}{Haha Ha and Koko Ko}
+\twoaffiliations{University of Lalala}{University Hahaha}
+
+\abstract{
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas metus ac urna faucibus viverra. Morbi auctor metus velit, eu venenatis tellus sagittis nec. Donec suscipit maximus velit, eget tempus urna mattis nec. Mauris pharetra vehicula turpis, at scelerisque mi suscipit id. Sed condimentum mi ut arcu congue mattis. Pellentesque vitae purus non massa sodales hendrerit. Suspendisse lacinia metus nec mi gravida, id ultrices nulla viverra. Sed vehicula, leo eu interdum vulputate, dolor metus sodales orci, a congue odio tellus at mauris. Sed pretium imperdiet consectetur. Aenean quis lacus velit. Sed interdum nisl eros, quis suscipit ante dignissim et. Vivamus ac ligula a sapien facilisis semper. Nam ac ante leo. Suspendisse potenti. Ut elementum velit at sapien pharetra luctus. Praesent vel ultrices eros.}
 
 \begin{document}
-
 \maketitle
 
 \section{Introduction}
-There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
-There is another theory which states that this has already happened.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe}
-\caption{The Universe}
-\label{fig:universe}
-\end{figure}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas metus ac urna faucibus viverra. Morbi auctor metus velit, eu venenatis tellus sagittis nec. Donec suscipit maximus velit, eget tempus urna mattis nec. Mauris pharetra vehicula turpis, at scelerisque mi suscipit id. Sed condimentum mi ut arcu congue mattis. Pellentesque vitae purus non massa sodales hendrerit. Suspendisse lacinia metus nec mi gravida, id ultrices nulla viverra. Sed vehicula, leo eu interdum vulputate, dolor metus sodales orci, a congue odio tellus at mauris. Sed pretium imperdiet consectetur. Aenean quis lacus velit. Sed interdum nisl eros, quis suscipit ante dignissim et. Vivamus ac ligula a sapien facilisis semper. Nam ac ante leo. Suspendisse potenti. Ut elementum velit at sapien pharetra luctus. Praesent vel ultrices eros.
 
-\section{Conclusion}
-``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+\section{Some \LaTeX{} Examples}
 
-\bibliographystyle{plain}
+\subsection{Sections}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas metus ac urna faucibus viverra. Morbi auctor metus velit, eu venenatis tellus sagittis nec. Donec suscipit maximus velit, eget tempus urna mattis nec. Mauris pharetra vehicula turpis, at scelerisque mi suscipit id. Sed condimentum mi ut arcu congue mattis. Pellentesque vitae purus non massa sodales hendrerit. Suspendisse lacinia metus nec mi gravida, id ultrices nulla viverra. Sed vehicula, leo eu interdum vulputate, dolor metus sodales orci, a congue odio tellus at mauris. Sed pretium imperdiet consectetur. Aenean quis lacus velit. Sed interdum nisl eros, quis suscipit ante dignissim et. Vivamus ac ligula a sapien facilisis semper. Nam ac ante leo. Suspendisse potenti. Ut elementum velit at sapien pharetra luctus. Praesent vel ultrices eros.
+
+\subsection{Comments}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas metus ac urna faucibus viverra. Morbi auctor metus velit, eu venenatis tellus sagittis nec. Donec suscipit maximus velit, eget tempus urna mattis nec. Mauris pharetra vehicula turpis, at scelerisque mi suscipit id. Sed condimentum mi ut arcu congue mattis. Pellentesque vitae purus non massa sodales hendrerit. Suspendisse lacinia metus nec mi gravida, id ultrices nulla viverra. Sed vehicula, leo eu interdum vulputate, dolor metus sodales orci, a congue odio tellus at mauris. Sed pretium imperdiet consectetur. Aenean quis lacus velit. Sed interdum nisl eros, quis suscipit ante dignissim et. Vivamus ac ligula a sapien facilisis semper. Nam ac ante leo. Suspendisse potenti. Ut elementum velit at sapien pharetra luctus. Praesent vel ultrices eros.
+
+\subsection{References}
+
+LaTeX automatically generates a bibliography in the APA style from your .bib file. The citep command generates a formatted citation in parentheses \citep{adams1995hitchhiker}. The cite command generates one without parentheses. LaTeX was first discovered by \cite{adams1995hitchhiker}.
+
+\subsection{Tables and Figures}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas metus ac urna faucibus viverra. Morbi auctor metus velit, eu venenatis tellus sagittis nec. Donec suscipit maximus velit, eget tempus urna mattis nec. Mauris pharetra vehicula turpis, at scelerisque mi suscipit id. Sed condimentum mi ut arcu congue mattis. Pellentesque vitae purus non massa sodales hendrerit. Suspendisse lacinia metus nec mi gravida, id ultrices nulla viverra. Sed vehicula, leo eu interdum vulputate, dolor metus sodales orci, a congue odio tellus at mauris. Sed pretium imperdiet consectetur. Aenean quis lacus velit. Sed interdum nisl eros, quis suscipit ante dignissim et. Vivamus ac ligula a sapien facilisis semper. Nam ac ante leo. Suspendisse potenti. Ut elementum velit at sapien pharetra luctus. Praesent vel ultrices eros.
+
 \bibliography{references}
+
 \end{document}
+
+%
+% Please see the package documentation for more information
+% on the APA6 document class:
+%
+% http://www.ctan.org/pkg/apa6
